@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Mario - HTML5 Edition</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+#gameCanvas {
+    border: 3px solid #333;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    cursor: none;
+}
+#loading {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+<div id="loading">Loading Super Mario...</div>
+<canvas id="gameCanvas" width="960" height="544"></canvas>
+<script src="game.js"></script>
+</body>
+</html>
